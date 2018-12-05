@@ -1,1 +1,10 @@
-﻿  SDLFRAMEWORK.vcxproj -> C:\Users\Violet\Desktop\Classes\GameProgamming5-c++2\SDLFramework\SDLFRAMEWORK\Debug\SDLFRAMEWORK.exe
+﻿  GameManager.cpp
+  Main0.cpp
+  SceneHandler.cpp
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\scenehandler.cpp(19): warning C4018: '<': signed/unsigned mismatch
+  Task2.cpp
+  Timer.cpp
+  Window.cpp
+  Generating Code...
+  LINK : C:\Users\Violet\Documents\GitHub\Tamagochi-v2\SDLFRAMEWORK\Debug\SDLFRAMEWORK.exe not found or not built by the last incremental link; performing full link
+  SDLFRAMEWORK.vcxproj -> C:\Users\Violet\Documents\GitHub\Tamagochi-v2\SDLFRAMEWORK\Debug\SDLFRAMEWORK.exe

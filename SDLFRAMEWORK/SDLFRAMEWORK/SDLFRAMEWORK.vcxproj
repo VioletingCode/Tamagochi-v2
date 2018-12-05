@@ -71,7 +71,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>C:\GameDev\SDL2_image-2.0.3\include;C:\GameDev\SDL2_ttf-2.0.14\include;C:\GameDev\SDL2-2.0.8\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\GameDev\SDL2_image-2.0.3\lib\x86;C:\GameDev\SDL2_ttf-2.0.14\lib\x86;C:\GameDev\SDL2-2.0.8\lib\x86;C:\GameDev\SDL2-2.0.8\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\GameDev\SDL2_image-2.0.3\lib\x86;C:\GameDev\SDL2_ttf-2.0.14\lib\x86;C:\GameDev\SDL2-2.0.8\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -79,10 +79,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>C:\GameDev\SDL2-2.0.8\lib\x86\SDL2.lib;C:\GameDev\SDL2-2.0.8\lib\x86\SDL2main.lib;C:\GameDev\SDL2_ttf-2.0.14\lib\x86\SDL2_ttf.lib;C:\GameDev\SDL2_image-2.0.3\lib\x86\SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
