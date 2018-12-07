@@ -20,7 +20,6 @@ bool Task2::OnCreate() {
 	SDL_GetWindowSize(window, &w, &h);
 
 	cout << "Task 2" << endl;
-
 	return true;
 }
 
