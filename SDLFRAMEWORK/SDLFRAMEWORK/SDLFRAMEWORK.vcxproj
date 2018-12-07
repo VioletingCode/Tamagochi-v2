@@ -123,22 +123,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Body.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="Main0.cpp" />
+    <ClCompile Include="MMath.cpp" />
     <ClCompile Include="SceneHandler.cpp" />
     <ClCompile Include="Task2.cpp" />
     <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="UI_1.cpp" />
+    <ClCompile Include="UI_2.cpp" />
+    <ClCompile Include="UI_Factory.cpp" />
+    <ClCompile Include="VMath.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Body.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="HFiles.h" />
     <ClInclude Include="json.hpp" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="MMath.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneHandler.h" />
     <ClInclude Include="Task2.h" />
     <ClInclude Include="Timer.h" />
+    <ClInclude Include="UI.h" />
+    <ClInclude Include="UI_1.h" />
+    <ClInclude Include="UI_2.h" />
+    <ClInclude Include="UI_Factory.h" />
     <ClInclude Include="Vector.h" />
+    <ClInclude Include="VMath.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
