@@ -131,7 +131,6 @@
     <ClCompile Include="Task2.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="UI_1.cpp" />
-    <ClCompile Include="UI_2.cpp" />
     <ClCompile Include="UI_Factory.cpp" />
     <ClCompile Include="VMath.cpp" />
     <ClCompile Include="Window.cpp" />
@@ -149,7 +148,6 @@
     <ClInclude Include="Timer.h" />
     <ClInclude Include="UI.h" />
     <ClInclude Include="UI_1.h" />
-    <ClInclude Include="UI_2.h" />
     <ClInclude Include="UI_Factory.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="VMath.h" />

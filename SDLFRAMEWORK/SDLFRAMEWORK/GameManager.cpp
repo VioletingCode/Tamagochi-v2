@@ -22,7 +22,7 @@ void GameManager::OnDestroy() {
 
 bool GameManager::OnCreate() {
 
-	window = new Window("Game Window", 800, 600);
+	window = new Window("Game Window", 1280, 720);
 
 	if (window == nullptr) {
 		OnDestroy();

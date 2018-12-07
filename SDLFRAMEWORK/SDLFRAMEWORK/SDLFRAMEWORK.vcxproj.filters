@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\UIHeader">
+      <UniqueIdentifier>{adbf1e06-897d-4720-942a-62b45b86e6d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UISource">
+      <UniqueIdentifier>{1f802d80-65c9-4b8e-8f7d-60b4f6acf880}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameManager.cpp">
@@ -39,14 +45,11 @@
     <ClCompile Include="VMath.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="UI_Factory.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="UI_1.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\UISource</Filter>
     </ClCompile>
-    <ClCompile Include="UI_2.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="UI_Factory.cpp">
+      <Filter>Source Files\UISource</Filter>
     </ClCompile>
     <ClCompile Include="Body.cpp">
       <Filter>Source Files</Filter>
@@ -80,9 +83,6 @@
     <ClInclude Include="Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Matrix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -92,14 +92,14 @@
     <ClInclude Include="VMath.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI_Factory.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="UI.h">
+      <Filter>Header Files\UIHeader</Filter>
     </ClInclude>
     <ClInclude Include="UI_1.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\UIHeader</Filter>
     </ClInclude>
-    <ClInclude Include="UI_2.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="UI_Factory.h">
+      <Filter>Header Files\UIHeader</Filter>
     </ClInclude>
     <ClInclude Include="Body.h">
       <Filter>Header Files</Filter>

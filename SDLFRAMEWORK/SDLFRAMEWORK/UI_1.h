@@ -16,9 +16,11 @@ class UI_1 : public UI
 {
 public:
 	//Vector bodies to create memory space
-
+	vector<Body*> vBodies;
 private:
 public:
+	UI_1();
+	~UI_1();
 	bool OnCreate();
 	void OnDestroy();
 	//vector<Body*> Render();

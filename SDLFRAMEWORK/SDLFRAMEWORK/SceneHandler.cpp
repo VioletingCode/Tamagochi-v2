@@ -16,7 +16,7 @@ SceneHandler::~SceneHandler()
 }
 
 void SceneHandler::OnDestroy() {
-	for (int i = 0; i < tasks.size(); i++) {
+	for (unsigned int i = 0; i < tasks.size(); i++) {
 		tasks[i]->OnDestroy();
 		delete tasks[i];
 	}
