@@ -39,12 +39,11 @@ void Task2::Update() {
 }
 
 void Task2::HandleEvents(const SDL_Event event) {
-	
+
 }
 
 void Task2::Render() {
 	//UI will be rendered by here with separate window
-	UI->Render(projectionMatrix, window);
 
 
 	//SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);

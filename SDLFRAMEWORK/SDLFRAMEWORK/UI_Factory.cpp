@@ -1,5 +1,3 @@
-#include "UI_1.h"
-#include "UI_2.h"
 #include "UI_Factory.h"
 
 using namespace std;
@@ -17,15 +15,6 @@ void UI_Factory::createUI(int cUI) {
 			currentUI->OnDestroy();
 		}
 		//If you exit or any situation set currentUI OnCreate to false
-		if (currentUI->OnCreate() == false) {
-			currentUI->OnDestroy();
-		}
-		break;
-	case 2:
-		currentUI = shared_ptr<UI_2>(new UI_2());
-		if (currentUI == nullptr) {
-			currentUI->OnDestroy();
-		}
 		if (currentUI->OnCreate() == false) {
 			currentUI->OnDestroy();
 		}
