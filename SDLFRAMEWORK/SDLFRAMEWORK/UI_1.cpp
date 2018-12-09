@@ -1,6 +1,10 @@
 #include "UI_1.h"
 
-UI_1::UI_1() {}
+UI_1::UI_1() {
+
+}
+
+
 UI_1::~UI_1() {}
 
 //RPG HUD OnCreate from vector bodies and return it
@@ -10,6 +14,15 @@ bool UI_1::OnCreate() {
 	vBodies.push_back(new Body("button_clean.png", 0, 0, Vec3(24.0f, 13.5f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), 0, false));
 	vBodies.push_back(new Body("button_play.png", 0, 0, Vec3(24.0f, 12.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), 0, false));
 	vBodies.push_back(new Body("buttons_medicine.png", 0, 0, Vec3(24.0f, 10.5f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), 0, false));
+
+
+	////Iterator goes through Vector
+	//for (int i = 0; i < vBodies.size(); i++) {
+	//	vBodies[i]->getImage();
+	//	
+	//}
+
+
 	for (auto it : vBodies) {
 		if (it == nullptr) {
 			return false;
@@ -30,6 +43,7 @@ void UI_1::OnDestroy() {
 void UI_1::Render(Matrix4 projectionMatrix, SDL_Window * window) {
 	SDL_Surface *uiScreenSurface = SDL_GetWindowSurface(window);
 	SDL_Rect imageRectangle;
+
 	for (int i = 0; i < 4; ++i) {
 		Vec3 screenCoords = projectionMatrix * vBodies[i]->pos;
 
@@ -38,13 +52,12 @@ void UI_1::Render(Matrix4 projectionMatrix, SDL_Window * window) {
 		imageRectangle.x = screenCoords.x; /// implicit type conversions BAD - probably causes a compiler warning
 		imageRectangle.y = screenCoords.y; /// implicit type conversions BAD - probably causes a compiler warning
 
+		//SDL_RenderCopy(render, vBodies[i]->getImage(), NULL, &imageRectangle);
 		SDL_BlitSurface(vBodies[i]->getImage(), nullptr, uiScreenSurface, &imageRectangle);
 	}
-
 	SDL_UpdateWindowSurface(window);
 }
 
 //Leave as void
 void UI_1::HandleEvents(const SDL_Event& event) {
-
 }

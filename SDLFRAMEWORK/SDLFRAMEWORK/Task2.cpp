@@ -39,16 +39,32 @@ void Task2::Update() {
 }
 
 void Task2::HandleEvents(const SDL_Event event) {
+	//Window 1280, 720
 
+	int x = event.button.x;
+	int y = event.button.y;
+
+	if (event.type == SDL_MOUSEBUTTONDOWN) {
+		if (x >= 1020 && y <= 60) {
+			printf("MOUSE_button_1\n");
+		} else if (x >= 1020 && y >= 65 && y <= 140) {
+			printf("MOUSE_button_2\n");
+		} else if (x >= 1020 && y >= 145 && y <= 215) {
+			printf("MOUSE_button_3\n");
+		} else if (x >= 1020 && y >= 220 && y <= 270) {
+			printf("MOUSE_button_4\n");
+		}
+		else {
+			printf("Not Detected\n");
+		}
+	}
 }
 
 void Task2::Render() {
 	//UI will be rendered by here with separate window
 	UI->Render(projectionMatrix, window);
 	SDL_UpdateWindowSurface(window);
-
 	//SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 	//SDL_RenderClear(renderer);
-
 	//SDL_RenderPresent(renderer);
 }
