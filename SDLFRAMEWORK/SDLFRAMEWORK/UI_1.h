@@ -18,14 +18,14 @@ public:
 	//Vector bodies to create memory space
 	vector<Body*> vBodies;
 private:
-	
+
 public:
 	UI_1();
 	~UI_1();
 	bool OnCreate();
 	void OnDestroy();
 	//vector<Body*> Render();
-	void Render(Matrix4 projectionMatrix, SDL_Window * window);
+	void Render(Matrix4 projectionMatrix, SDL_Window * window, SDL_Renderer * renderer);
 	void HandleEvents(const SDL_Event& event);
 };
 
