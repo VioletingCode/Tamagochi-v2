@@ -16,11 +16,11 @@ bool UI_1::OnCreate() {
 	vBodies.push_back(new Body("buttons_medicine.png", 0, 0, Vec3(24.0f, 10.5f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), 0, false));
 
 
-	//Iterator goes through Vector
-	for (int i = 0; i < vBodies.size(); i++) {
-		vBodies[i]->getImage();
-		
-	}
+	////Iterator goes through Vector
+	//for (int i = 0; i < vBodies.size(); i++) {
+	//	vBodies[i]->getImage();
+	//	
+	//}
 
 
 	for (auto it : vBodies) {
