@@ -67,7 +67,6 @@ void SceneHandler::Update() {
 
 	tasks.front()->Render();
 
-
 }
 
 void SceneHandler::HandleEvents(SDL_Event event) {

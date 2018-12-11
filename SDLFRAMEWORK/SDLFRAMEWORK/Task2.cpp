@@ -13,7 +13,7 @@ Task2::~Task2()
 }
 
 void Task2::OnDestroy() {
-	
+	UI->OnDestroy();
 }
 
 bool Task2::OnCreate() {
@@ -62,8 +62,12 @@ void Task2::HandleEvents(const SDL_Event event) {
 
 void Task2::Render() {
 	//UI will be rendered by here with separate window
+	
+	
 	SDL_RenderClear(renderer);
-	SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 	UI->Render(projectionMatrix, window);
+	SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 	SDL_RenderPresent(renderer);
+
+	UI->OnTextureDestroy();
 }

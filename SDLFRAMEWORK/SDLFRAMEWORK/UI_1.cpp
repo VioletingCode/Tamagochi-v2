@@ -17,6 +17,7 @@ bool UI_1::OnCreate() {
 			return false;
 		}
 	}
+
 	return true;
 }
 
@@ -26,20 +27,24 @@ void UI_1::OnDestroy() {
 		delete it;
 		it = nullptr;
 	}
+}
 
-	//Free loaded images
+void UI_1::OnTextureDestroy() {
+	//Free loaded image
+
 	SDL_DestroyTexture(button_texture);
 	button_texture = nullptr;
 
 	//Destroy window
 	SDL_DestroyRenderer(renderer);
-	SDL_DestroyWindow(window);
 	renderer = nullptr;
-	window = nullptr;
+	//SDL_DestroyWindow(window);
+	//window = nullptr;
+
 
 	//Quit SDL subsystem
-	IMG_Quit;
-	SDL_Quit;
+	//IMG_Quit;
+	//SDL_Quit;
 }
 
 //RPG HUD Render to generate 3 bodies with UI Window, ScreenCoordinates, and BlitSurface.
@@ -56,7 +61,6 @@ void UI_1::Render(Matrix4 projectionMatrix, SDL_Window * window) {
 		imageRectangle.y = screenCoords.y; /// implicit type conversions BAD - probably causes a compiler warning
 
 		button_texture = SDL_CreateTextureFromSurface(renderer, vBodies[i]->getImage());
-
 		SDL_RenderCopy(renderer, button_texture, NULL, &imageRectangle);
 		//SDL_BlitSurface(vBodies[i]->getImage(), nullptr, uiScreenSurface, &imageRectangle);
 	}
