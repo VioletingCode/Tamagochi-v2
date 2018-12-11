@@ -28,7 +28,6 @@ public:
 	~UI_1();
 	bool OnCreate();
 	void OnDestroy();
-	void OnTextureDestroy();
 	//vector<Body*> Render();
 	void Render(Matrix4 projectionMatrix, SDL_Window * window);
 	void HandleEvents(const SDL_Event& event);

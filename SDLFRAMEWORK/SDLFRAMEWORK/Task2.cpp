@@ -65,9 +65,7 @@ void Task2::Render() {
 	
 	
 	SDL_RenderClear(renderer);
-	UI->Render(projectionMatrix, window);
 	SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+	UI->Render(projectionMatrix, window);
 	SDL_RenderPresent(renderer);
-
-	UI->OnTextureDestroy();
 }

@@ -29,24 +29,6 @@ void UI_1::OnDestroy() {
 	}
 }
 
-void UI_1::OnTextureDestroy() {
-	//Free loaded image
-
-	SDL_DestroyTexture(button_texture);
-	button_texture = nullptr;
-
-	//Destroy window
-	SDL_DestroyRenderer(renderer);
-	renderer = nullptr;
-	//SDL_DestroyWindow(window);
-	//window = nullptr;
-
-
-	//Quit SDL subsystem
-	//IMG_Quit;
-	//SDL_Quit;
-}
-
 //RPG HUD Render to generate 3 bodies with UI Window, ScreenCoordinates, and BlitSurface.
 void UI_1::Render(Matrix4 projectionMatrix, SDL_Window * window) {
 	renderer = SDL_GetRenderer(window);
@@ -62,6 +44,7 @@ void UI_1::Render(Matrix4 projectionMatrix, SDL_Window * window) {
 
 		button_texture = SDL_CreateTextureFromSurface(renderer, vBodies[i]->getImage());
 		SDL_RenderCopy(renderer, button_texture, NULL, &imageRectangle);
+		SDL_DestroyTexture(button_texture);
 		//SDL_BlitSurface(vBodies[i]->getImage(), nullptr, uiScreenSurface, &imageRectangle);
 	}
 }
