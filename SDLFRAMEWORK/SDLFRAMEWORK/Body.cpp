@@ -60,3 +60,7 @@ void Body::ApplyForce(Vec3 force) {
 SDL_Surface* Body::getImage() {
 	return bodyImage;
 }
+
+SDL_Texture* Body::getTexture() {
+	return bodyTexture = SDL_CreateTextureFromSurface(bodyRender, bodyImage);
+}

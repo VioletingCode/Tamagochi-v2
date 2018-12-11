@@ -18,6 +18,9 @@ public:
 	//Vector bodies to create memory space
 	vector<Body*> vBodies;
 private:
+	SDL_Renderer * renderer = nullptr;
+    SDL_Window * window = nullptr;
+	SDL_Texture * button_texture = nullptr;
 
 public:
 	UI_1();
@@ -25,7 +28,7 @@ public:
 	bool OnCreate();
 	void OnDestroy();
 	//vector<Body*> Render();
-	void Render(Matrix4 projectionMatrix, SDL_Window * window, SDL_Renderer * renderer);
+	void Render(Matrix4 projectionMatrix, SDL_Window * window);
 	void HandleEvents(const SDL_Event& event);
 };
 

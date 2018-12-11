@@ -16,6 +16,8 @@ private:
 	Vec3 accel;
 	Vec3 gravity;
 	SDL_Surface *bodyImage;
+	SDL_Renderer *bodyRender;
+	SDL_Texture *bodyTexture;
 
 public:
 	Body(char* imageName, float mass_, float radius_, Vec3 pos_, Vec3 vel_, Vec3 accel_, Vec3 gravity_, bool movable_);
@@ -25,6 +27,8 @@ public:
 
 	/// Just a little helper function
 	SDL_Surface* getImage();
+
+	SDL_Texture* getTexture();
 };
 
 
