@@ -46,16 +46,20 @@ void Task2::HandleEvents(const SDL_Event event) {
 
 	if (event.type == SDL_MOUSEBUTTONDOWN) {
 		if (x >= 1020 && y <= 60) {
-			printf("MOUSE_button_1\n");
+			printf("MOUSE_button_1\n"); //Button 1 (FEED)
+
 		} else if (x >= 1020 && y >= 65 && y <= 140) {
-			printf("MOUSE_button_2\n");
+			printf("MOUSE_button_2\n"); //Button 2 (CLEAN)
+
 		} else if (x >= 1020 && y >= 145 && y <= 215) {
-			printf("MOUSE_button_3\n");
+			printf("MOUSE_button_3\n"); //Button 3 (PLAY)
+
 		} else if (x >= 1020 && y >= 220 && y <= 270) {
-			printf("MOUSE_button_4\n");
+			printf("MOUSE_button_4\n"); //Button 4 (MEDICINE)
+
 		}
 		else {
-			printf("Not Detected\n");
+			printf("Not Detected\n"); //No buttons detected
 		}
 	}
 }
