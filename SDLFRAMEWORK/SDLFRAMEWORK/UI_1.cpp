@@ -10,14 +10,11 @@ bool UI_1::OnCreate() {
 	vBodies.push_back(new Body("button_clean.png", 0, 0, Vec3(24.0f, 13.5f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), 0, false));
 	vBodies.push_back(new Body("button_play.png", 0, 0, Vec3(24.0f, 12.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), 0, false));
 	vBodies.push_back(new Body("buttons_medicine.png", 0, 0, Vec3(24.0f, 10.5f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), 0, false));
-	vBodies.push_back(new Body("FoodBowlFull.png", 0, 0, Vec3(24.0f, 5.8f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), 0, false));
-	vBodies.push_back(new Body("RaccoonIdleTwo.png", 0, 0, Vec3(27.0f, 7.5f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), 0, false));
-	vBodies.push_back(new Body("LitterFull.png", 0, 0, Vec3(23.0f, 2.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), 0, false));
-	vBodies.push_back(new Body("RaccoonAnger.png", 0, 0, Vec3(27.0f, 3.8f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f), 0, false));
+
 
 	for (auto it : vBodies) {
 		if (it == nullptr) {
-			return false;           
+			return false;
 		}
 	}
 
@@ -37,7 +34,7 @@ void UI_1::Render(Matrix4 projectionMatrix, SDL_Window * window) {
 	renderer = SDL_GetRenderer(window);
 	SDL_Rect imageRectangle;
 
-	for (int i = 0; i < vBodies.size(); ++i) {
+	for (int i = 0; i < 4; ++i) {
 		Vec3 screenCoords = projectionMatrix * vBodies[i]->pos;
 
 		imageRectangle.h = vBodies[i]->getImage()->h;

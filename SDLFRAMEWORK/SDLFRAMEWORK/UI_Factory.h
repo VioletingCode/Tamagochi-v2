@@ -16,11 +16,8 @@ private:
 public:
 	void createUI(int cUI);
 	bool OnCreate();
-	
 	//Setting temp Abstract UI to return it
 	std::shared_ptr<UI> TempUI();
-
-
 	//static inline std::shared_ptr<UI> createUI(int cUI) {}
 };
 
