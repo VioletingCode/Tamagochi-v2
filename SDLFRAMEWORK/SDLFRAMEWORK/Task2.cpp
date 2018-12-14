@@ -69,7 +69,7 @@ void Task2::Render() {
 	
 	
 	SDL_RenderClear(renderer);
-	SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
 	UI->Render(projectionMatrix, window);
 	SDL_RenderPresent(renderer);
 }
