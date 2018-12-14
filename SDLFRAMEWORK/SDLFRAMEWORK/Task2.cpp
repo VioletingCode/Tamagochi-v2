@@ -20,6 +20,8 @@ bool Task2::OnCreate() {
 	SDL_GetWindowSize(window, &w, &h);
 
 	cout << "Task 2" << endl;
+	char* bean = (char*)"beans.png";
+	
 
 	return true;
 }
@@ -34,7 +36,7 @@ void Task2::HandleEvents(const SDL_Event event) {
 
 void Task2::Render() {
 
-	SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 	SDL_RenderClear(renderer);
 
 	SDL_RenderPresent(renderer);

@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\GameDev\SDL2_image-2.0.3\include;C:\GameDev\SDL2_ttf-2.0.14\include;C:\GameDev\SDL2-2.0.8\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\GameDev\SDL2_image-2.0.3\include;C:\GameDev\SDL2_ttf-2.0.14\include;C:\GameDev\SDL2-2.0.8\include;C:\Users\Violet\Documents\GitHub\Tamagochi-v2\SDLFRAMEWORK\SDLFRAMEWORK\json-develop\single_include;C:\Users\Violet\Documents\GitHub\Tamagochi-v2\SDLFRAMEWORK\SDLFRAMEWORK\DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK;$(IncludePath)</IncludePath>
     <LibraryPath>C:\GameDev\SDL2_image-2.0.3\lib\x86;C:\GameDev\SDL2_ttf-2.0.14\lib\x86;C:\GameDev\SDL2-2.0.8\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -84,7 +84,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>C:\GameDev\SDL2-2.0.8\lib\x86\SDL2.lib;C:\GameDev\SDL2-2.0.8\lib\x86\SDL2main.lib;C:\GameDev\SDL2_ttf-2.0.14\lib\x86\SDL2_ttf.lib;C:\GameDev\SDL2_image-2.0.3\lib\x86\SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -124,19 +124,38 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\Body.cpp" />
+    <ClCompile Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\MMath.cpp" />
+    <ClCompile Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\UI_1.cpp" />
+    <ClCompile Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\UI_Factory.cpp" />
+    <ClCompile Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\VMath.cpp" />
+    <ClCompile Include="Entity.cpp" />
     <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="LoadLevel.cpp" />
     <ClCompile Include="Main0.cpp" />
     <ClCompile Include="SceneHandler.cpp" />
+    <ClCompile Include="Tamagotchi.cpp" />
+    <ClCompile Include="TamagotchiScene.cpp" />
     <ClCompile Include="Task2.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\Body.h" />
+    <ClInclude Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\Matrix.h" />
+    <ClInclude Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\MMath.h" />
+    <ClInclude Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\UI.h" />
+    <ClInclude Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\UI_1.h" />
+    <ClInclude Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\UI_Factory.h" />
+    <ClInclude Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\VMath.h" />
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="GameManager.h" />
+    <ClInclude Include="LoadLevel.h" />
     <ClInclude Include="HFiles.h" />
-    <ClInclude Include="json.hpp" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneHandler.h" />
+    <ClInclude Include="Tamagotchi.h" />
+    <ClInclude Include="TamagotchiScene.h" />
     <ClInclude Include="Task2.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Vector.h" />

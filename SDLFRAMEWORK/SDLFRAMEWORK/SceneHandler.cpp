@@ -28,6 +28,11 @@ void SceneHandler::OnDestroy() {
 	//IMG_Quit();
 }
 
+void SceneHandler::AddTamagotchiScene(vector<Entity>* EntityList_, string RoomName_) {
+
+	tasks.push_back(new TamagotchiScene(window->GetWindow(), renderer, EntityList_, RoomName_));
+}
+
 bool SceneHandler::OnCreate() {
 
 	tasks.push_back(new Task2(window->GetWindow(), window->GetRenderer()));

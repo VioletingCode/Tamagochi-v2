@@ -1,10 +1,40 @@
 ﻿  GameManager.cpp
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\vector.h(147): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\vector.h(147): note: placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+  c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\vector.h(147): note: the missing variadic argument 3 is required by format string '%f'
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\gamemanager.cpp(30): error C2065: 'getRoomName': undeclared identifier
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\gamemanager.cpp(33): error C2143: syntax error: missing ';' before 'if'
+  LoadLevel.cpp
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\vector.h(147): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\vector.h(147): note: placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+  c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\vector.h(147): note: the missing variadic argument 3 is required by format string '%f'
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\loadlevel.cpp(39): warning C4018: '<': signed/unsigned mismatch
   Main0.cpp
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\vector.h(147): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\vector.h(147): note: placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+  c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\vector.h(147): note: the missing variadic argument 3 is required by format string '%f'
   SceneHandler.cpp
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\vector.h(147): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\vector.h(147): note: placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+  c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\vector.h(147): note: the missing variadic argument 3 is required by format string '%f'
 c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\scenehandler.cpp(19): warning C4018: '<': signed/unsigned mismatch
-  Task2.cpp
-  Timer.cpp
-  Window.cpp
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\scenehandler.cpp(33): error C2664: 'TamagotchiScene::TamagotchiScene(const TamagotchiScene &)': cannot convert argument 1 from 'Window *' to 'SDL_Window *'
+  c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\scenehandler.cpp(33): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+  TamagotchiScene.cpp
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\vector.h(147): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\vector.h(147): note: placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+  c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\vector.h(147): note: the missing variadic argument 3 is required by format string '%f'
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\tamagotchiscene.cpp(62): error C2511: 'TamagotchiScene::TamagotchiScene(SDL_Window *,SDL_Renderer *,std::vector<Entity,std::allocator<_Ty>> &,std::string)': overloaded member function not found in 'TamagotchiScene'
+          with
+          [
+              _Ty=Entity
+          ]
+  c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\tamagotchiscene.h(9): note: see declaration of 'TamagotchiScene'
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\tamagotchiscene.cpp(63): error C2597: illegal reference to non-static member 'TamagotchiScene::window'
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\tamagotchiscene.cpp(64): error C2597: illegal reference to non-static member 'TamagotchiScene::renderer'
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\tamagotchiscene.cpp(65): error C2597: illegal reference to non-static member 'TamagotchiScene::EntityList'
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\tamagotchiscene.cpp(66): error C2597: illegal reference to non-static member 'TamagotchiScene::roomImageName'
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\tamagotchiscene.cpp(67): error C2597: illegal reference to non-static member 'TamagotchiScene::rect'
+c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\tamagotchiscene.cpp(68): error C2352: 'TamagotchiScene::OnCreate': illegal call of non-static member function
+  c:\users\violet\documents\github\tamagochi-v2\sdlframework\sdlframework\tamagotchiscene.cpp(3): note: see declaration of 'TamagotchiScene::OnCreate'
   Generating Code...
-  LINK : C:\Users\Violet\Documents\GitHub\Tamagochi-v2\SDLFRAMEWORK\Debug\SDLFRAMEWORK.exe not found or not built by the last incremental link; performing full link
-  SDLFRAMEWORK.vcxproj -> C:\Users\Violet\Documents\GitHub\Tamagochi-v2\SDLFRAMEWORK\Debug\SDLFRAMEWORK.exe

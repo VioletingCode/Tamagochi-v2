@@ -21,8 +21,14 @@ void GameManager::OnDestroy() {
 
 
 bool GameManager::OnCreate() {
+	LevelLoader = new LoadLevel();
 
-	window = new Window("Game Window", 800, 600);
+	LevelLoader->ReadIn();
+
+	//window = new Window("Game Window", LevelLoader->getWindowX(), LevelLoader->getWindowY());
+	window = new Window("Game Window", 1280, 720);
+getRoomName
+	
 
 	if (window == nullptr) {
 		OnDestroy();
@@ -35,7 +41,7 @@ bool GameManager::OnCreate() {
 	}
 
 	sceneHandler = new SceneHandler(window);	
-
+	//sceneHandler->AddTamagotchiScene(LevelLoader->getEntity(), LevelLoader->());
 	if (sceneHandler == nullptr) {
 		OnDestroy();
 		return false;

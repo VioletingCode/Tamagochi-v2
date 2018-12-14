@@ -1,6 +1,7 @@
 #pragma once
 #include "HFiles.h"
 #include "Scene.h"
+#include "Tamagotchi.h"
 
 
 class Task2 : public Scene

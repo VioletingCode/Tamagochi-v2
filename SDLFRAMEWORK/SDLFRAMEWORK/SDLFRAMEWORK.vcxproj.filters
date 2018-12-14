@@ -33,15 +33,39 @@
     <ClCompile Include="Main0.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tamagotchi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadLevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TamagotchiScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\Body.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\MMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\UI_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\UI_Factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\VMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="HFiles.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="json.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
@@ -60,6 +84,39 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tamagotchi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadLevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TamagotchiScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\Body.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\Matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\MMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\UI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\UI_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\UI_Factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DongFiles\Tamagochi-v2-Dong\SDLFRAMEWORK\SDLFRAMEWORK\VMath.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
